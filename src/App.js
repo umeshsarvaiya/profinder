@@ -23,6 +23,7 @@ import UserDataDashboardPage from './pages/UserDataDashboardPage';
 import RequestManagementPage from './pages/RequestManagementPage';
 import NotFound from './pages/NotFound';
 import SearchAdminWithMap from './pages/SearchAdminWithMap';
+import AboutUsPage from './pages/AboutUsPage';
 
 import AdminForm from './components/AdminForm';
 
@@ -64,6 +65,7 @@ function App() {
               <Route path="/requests" element={<RequestManagementPage />} />
               <Route path="/admin-form" element={<AdminForm />} />
               <Route path="/search-admin-map" element={<SearchAdminWithMap />} />
+              <Route path="/about" element={<AboutUsPage />} />
               
               <Route path="*" element={<NotFound />} />
             </Routes>

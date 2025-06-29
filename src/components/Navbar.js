@@ -31,7 +31,8 @@ import {
   Logout as LogoutIcon,
   AccountCircle as AccountIcon,
   Dashboard as DashboardIcon,
-  Assignment as RequestIcon
+  Assignment as RequestIcon,
+  Info as AboutIcon
 } from '@mui/icons-material';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
@@ -63,6 +64,7 @@ const Navbar = () => {
 
   const menuItems = [
     { text: 'Home', path: '/', icon: <HomeIcon /> },
+    { text: 'About Us', path: '/about', icon: <AboutIcon /> },
     { text: 'Search Professionals', path: '/search', icon: <SearchIcon /> },
     ...(isAuthenticated ? [
       { text: 'My Requests', path: '/requests', icon: <RequestIcon /> }

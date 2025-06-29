@@ -20,7 +20,7 @@ const LocationMap = ({ onLocationSelect, selectedLocation }) => {
 
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY || 'YOUR_GOOGLE_MAPS_API_KEY'
+    googleMapsApiKey: 'AIzaSyCCRDdzC4-8aMliCT4at-LTN0bB12GwkA0'
   });
 
   const onLoad = useCallback((map) => {
