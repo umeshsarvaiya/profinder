@@ -46,7 +46,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { isAuthenticated, user, logout } = useAuth();
-
+console.log(user,"user")
   const userName = user?.name || 'User';
   const handleLogout = () => {
     logout();
@@ -61,7 +61,7 @@ const Navbar = () => {
   const handleProfileMenuClose = () => {
     setAnchorEl(null);
   };
-
+console.log(isAuthenticated);
   const menuItems = [
     { text: 'Home', path: '/', icon: <HomeIcon /> },
     { text: 'About Us', path: '/about', icon: <AboutIcon /> },
@@ -78,10 +78,7 @@ const Navbar = () => {
     ] : isAuthenticated && user?.role === 'user' ? [
       { text: 'Become Admin', path: '/admin-form', icon: <FormIcon /> },
       { text: 'Verified Admins', path: '/verified-admins', icon: <VerifiedIcon /> },
-    ] : [
-      { text: 'Login', path: '/login', icon: <LoginIcon /> },
-      { text: 'Register', path: '/register', icon: <RegisterIcon /> },
-    ])
+    ] : []),
   ];
 
   const handleDrawerToggle = () => {
