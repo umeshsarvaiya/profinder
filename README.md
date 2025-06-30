@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -258,3 +259,6 @@ profinder/
 ## License
 
 This project is licensed under the MIT License.
+=======
+# profinder
+>>>>>>> 310c951e700e70ee9c5e35145e4039e244b2a6aa
